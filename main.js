@@ -3,14 +3,16 @@
 /*
 
 Task #1:
-- Using Object.assign(), create an object "moreLanguages" that combines the following key/value pairs with the existing object "languages":
+- Using Object.assign(), create an object "moreLanguages" that 
+combines the following key/value pairs with the existing object */
 
-  {
+
+  let languages1 = {
     isolates: ["Korean", "Basque"],
     Germanic: ["Swedish", "Danish", "English"]
   }
 
-Logging "moreLanguages" should print:
+/*Logging "moreLanguages" should print:
 
   {
     Celtic: [ 'Welsh', 'Irish', 'Breton' ],
@@ -27,9 +29,9 @@ let languages = {
 };
 
 //Write task #1 code below
+let moreLanguages = Object.assign({}, languages, languages1);
 
-
-
+console.log(moreLanguages);
 
 /*
 Task #2
